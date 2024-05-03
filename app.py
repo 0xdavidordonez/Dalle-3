@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st                                         
 from apikey import apikey
 
-
+st.write("Secret Key", st.secrets["openai_secret_key"])
 
 # Initialize OpenAI client with API key
 client=OpenAI(api_key=apikey)
