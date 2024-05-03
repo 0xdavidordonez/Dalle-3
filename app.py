@@ -1,12 +1,12 @@
 from openai import OpenAI
 from PIL import Image
 import streamlit as st                                         
-from apikey import apikey
+
 
 
 
 # Initialize OpenAI client with API key
-client=OpenAI(api_key=apikey)
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def generate_images(img_description):
     img_response=client.images.generate(
