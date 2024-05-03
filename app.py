@@ -16,13 +16,13 @@ def generate_image(img_description):
             size="1024x1024",
             quality="standard",
             n=1  # Always generate only one image
+        
         )
         image_url = img_response.data[0].url
         return image_url
-    except Exception as e:
-        st.error(f"Error generating image: {e}")
+    
 
-st.set_page_config(page_title="DALL-E-3 Image Generation", page_icon=":camera:", layout="wide")
+st.set_page_config(page_title="DALL-E-3 Image Generation", page_icon=":robot:", layout="wide")
 
 # Create a title
 st.title("DALL-E-3 Image Generation Tool")
@@ -32,5 +32,5 @@ img_description = st.text_input("Enter a description for the image you want to g
 
 # Create a button to generate images
 if st.button("Generate Image") and img_description:
-    generated_image_url = generate_image(img_description)
-    st.image(generated_image_url)
+    generate_image=generate_image(img_description)
+    st.image(generate_image)
