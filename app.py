@@ -29,5 +29,5 @@ img_description = st.text_input("Enter a description for the image you want to g
 
 # Create a button to generate images
 if st.button("Generate Image") and img_description:
-    generate_image=generate_image(img_description)
+    generate_image=generate_images(img_description)
     st.image(generate_image)
