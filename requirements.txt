@@ -1,5 +1,4 @@
 OpenAI
 image
 streamlit
-os
 dotenv
