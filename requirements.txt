@@ -1,4 +1,4 @@
 OpenAI
 image
 streamlit
-dotenv
+apikey
