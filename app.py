@@ -8,7 +8,7 @@ from apikey import apikey
 # Initialize OpenAI client with API key
 client=OpenAI(api_key=apikey)
 
-def generate_image(image_description):
+def generate_image(img_description):
     try:
         img_response = client.images.generate(
             model="dall-e-3",
