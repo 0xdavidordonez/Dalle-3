@@ -12,7 +12,7 @@ def generate_image(img_description):
     try:
         img_response = client.images.generate(
             model="dall-e-3",
-            prompt=image_description,
+            prompt=img_description,
             size="1024x1024",
             quality="standard",
             n=1  # Always generate only one image
