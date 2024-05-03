@@ -8,7 +8,7 @@ from apikey import apikey
 # Initialize OpenAI client with API key
 client=OpenAI(api_key=apikey)
 
-def generate_image(img_description):
+def generate_images(img_description):
     img_response=client.images.generate(
             model="dall-e-3",
             prompt=img_description,
@@ -30,5 +30,5 @@ img_description = st.text_input("Enter a description for the image you want to g
 # Create a button to generate images
 if st.button("Generate Image") and img_description:
     st.spinner(text='Generating image...')
-    generate_image=generate_image(img_description)
+    generate_image=generate_images(img_description)
     st.image(generate_image)
