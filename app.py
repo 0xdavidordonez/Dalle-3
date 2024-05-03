@@ -3,11 +3,11 @@ from PIL import Image
 import streamlit as st                                         
 from apikey import apikey
 
-st.write("Secret Key", st.secrets["openai_secret_key"])
+
 
 # Initialize OpenAI client with API key
 client=OpenAI(api_key=apikey)
-
+st.write("Secret Key", st.secrets["openai_secret_key"])
 def generate_image(img_description):
     img_response=client.images.generate(
             model="dall-e-3",
