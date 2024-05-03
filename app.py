@@ -1,4 +1,4 @@
-import OpenAI
+import OpenAi
 from PIL import image
 import streamlit as st                                         
 from apikey import apikey
