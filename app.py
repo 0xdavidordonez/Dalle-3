@@ -6,7 +6,7 @@ from apikey import apikey
 
 
 # Initialize OpenAI client with API key
-client = openai.Client(api_key=apikey)
+client=OpenAI(api_key=apikey)
 
 def generate_image(image_description):
     try:
