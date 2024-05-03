@@ -1,16 +1,9 @@
 import OpenAI
 from PIL import image
 import streamlit as st                                         
-from dotenv import load_dotenv                
-# Load environment variables from key.env file
-load_dotenv("key.env")
+from apikey import apikey
 
-# Retrieve API key from environment variable
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-# Check if the API key is properly loaded
-if OPENAI_API_KEY is None:
-    raise ValueError("OpenAI API key is not provided. Please check your key.env file.")
 
 # Initialize OpenAI client with API key
 client = openai.Client(api_key=OPENAI_API_KEY)
