@@ -5,7 +5,7 @@ import streamlit as st
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-https://lottie.host/embed/435360ef-c763-49f5-8669-9c0425ee567a/UfOypKFdH2.json   
+https://ipfs.io/ipfs/QmYQC8d5ehmxQyukiuj7jWeJyp41x7KbwEgBuMRG1h4eoA?filename=Animation%20-%201714931083673.json  
 }
 </style>
 """
