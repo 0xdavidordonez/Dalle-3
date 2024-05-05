@@ -1,4 +1,6 @@
 OpenAI
 Image
 streamlit
-
+json
+requests
+st_lottie
