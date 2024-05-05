@@ -1,31 +1,6 @@
 from openai import OpenAI
 from PIL import Image
 import streamlit as st 
-import json
-from streamlit_lottie import st_lottie
-
-
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-    
-
-#lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
-lottie_hello = load_lottieurl("https://lottie.host/embed/435360ef-c763-49f5-8669-9c0425ee567a/UfOypKFdH2.json")
-
-st_lottie(
-    lottie_hello,
-    speed=1,
-    reverse=False,
-    loop=True,
-    quality="high", # medium ; high
-    renderer="svg", # canvas
-    height=None,
-    width=None,
-    key=None,
-)
 
 
 # Initialize OpenAI client with API key
