@@ -1,14 +1,36 @@
 from openai import OpenAI
 from PIL import Image
-import streamlit as st                                         
+import streamlit as st 
+import json
+import requests
+from streamlit_lottie import st_lottie
 
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-https://ipfs.io/ipfs/QmYQC8d5ehmxQyukiuj7jWeJyp41x7KbwEgBuMRG1h4eoA?filename=Animation%20-%201714931083673.json  
-}
-</style>
-"""
+#def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+    
+
+#lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
+lottie_hello = load_lottieurl("https://lottie.host/embed/435360ef-c763-49f5-8669-9c0425ee567a/UfOypKFdH2.json")
+
+st_lottie(
+    lottie_hello,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="high", # medium ; high
+    renderer="svg", # canvas
+    height=None,
+    width=None,
+    key=None,
+)
 
 
 # Initialize OpenAI client with API key
