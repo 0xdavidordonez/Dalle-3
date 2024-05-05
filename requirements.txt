@@ -2,4 +2,4 @@ OpenAI
 Image
 streamlit
 json
-st_lottie
+streamlit_lottie
