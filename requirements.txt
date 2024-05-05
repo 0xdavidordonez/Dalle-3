@@ -1,5 +1,3 @@
 OpenAI
 Image
 streamlit
-json
-streamlit_lottie
