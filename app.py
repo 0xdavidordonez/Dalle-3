@@ -5,9 +5,7 @@ import streamlit as st
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-background-image url: "https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/435360ef-c763-49f5-8669-9c0425ee567a/UfOypKFdH2.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>   
+background-image url: "https://lottie.host/435360ef-c763-49f5-8669-9c0425ee567a/UfOypKFdH2.json   
 }
 </style>
 """
